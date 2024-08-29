@@ -4014,7 +4014,7 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 }
 
 .services-section .grid:hover {
-  background: url("../images/slider/Semco.jpg") center center/cover no-repeat local;
+  background: url("images/slider/Semco.jpg") center center/cover no-repeat local;
 }
 
 .services-section .grid:hover h3,
