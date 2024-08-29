@@ -3990,7 +3990,7 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 
 .services-section .grid:hover h3,
 .services-section .grid:hover p {
-  color: #081690;
+  color:white;
 }
 
 /*--------------------------------------------------------------
