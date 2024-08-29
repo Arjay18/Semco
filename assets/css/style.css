@@ -3810,7 +3810,7 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 
 .site-footer .copyright-info ul {
   display: inline-block;
-  float: right;
+  float:none;
   overflow: hidden;
 }
 
