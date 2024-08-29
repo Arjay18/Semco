@@ -292,7 +292,6 @@ img {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -324,7 +323,7 @@ img {
 
 /**** style for box layout ***/
 .box-layout {
-  /*** style for box layout ***/
+  border-radius: 0cap;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1365,14 +1364,14 @@ img {
 /************************************
 	Service sidebar
 **********************************/
-.service-sidebar {
+ 
   /*** link wiget ***/
   /*** google map widget ***/
   /*** contact widget ***/
   /*** brochures-widget ***/
   /*** case-link-widget ***/
   /*** newsletter widget ***/
-}
+
 
 @media screen and (min-width: 992px) {
   .service-sidebar {
@@ -2189,11 +2188,11 @@ img {
 /*--------------------------------------------------------------
 #0.3	header
 --------------------------------------------------------------*/
-.site-header {
+
   /* navigation open and close btn hide for width screen */
   /* style for navigation less than 992px */
   /*navbar collaps less then 992px*/
-}
+
 
 .site-header .navigation {
   background-color:whitesmoke;
@@ -2228,9 +2227,6 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  .site-header #navbar {
-    /*** hover effect ***/
-  }
   .site-header #navbar li {
     position: relative;
   }
@@ -2342,9 +2338,6 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  .site-header #navbar {
-    /*** hover effect ***/
-  }
   .site-header #navbar .has-mega-menu {
     position: static;
   }
@@ -2445,9 +2438,6 @@ img {
 }
 
 @media (max-width: 991px) {
-  .site-header {
-    /* class for show hide navigation */
-  }
   .site-header .container {
     width: 100%;
   }
@@ -2570,10 +2560,6 @@ img {
 /*******************************************
 	header-style-1
 *******************************************/
-.header-style-1, .header-style-2 {
-  /*** topbar ***/
-  /*** naivgation ***/
-}
 
 .header-style-1 .topbar, .header-style-2 .topbar {
   /*
@@ -2780,10 +2766,6 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 /*******************************************
 	header-style-2
 *******************************************/
-.header-style-2 {
-  /*** tobar ***/
-  /*** navigation ***/
-}
 
 @media screen and (min-width: 992px) {
   .header-style-2 {
@@ -2864,10 +2846,6 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 /*******************************************
 	header-style-3
 *******************************************/
-.header-style-3 {
-  /*** topbar ***/
-  /*** naivgation ***/
-}
 
 @media screen and (min-width: 992px) {
   .header-style-3 {
@@ -3507,13 +3485,6 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 /*--------------------------------------------------------------
 #0.5	footer
 --------------------------------------------------------------*/
-.site-footer {
-  /*** about widget ***/
-  /*** quick-links-widget ***/
-  /*** recent-post-widget ***/
-  /*** newsletter widget ***/
-  /*** copyright-info ***/
-}
 
 .site-footer .upper-footer {
   background: #f3f5fa;
@@ -3776,7 +3747,7 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 
 .site-footer .copyright-info {
   background-color: #09a223;
-  font-weith: 500;
+  font-weight: 500;
   padding: 22px 0 18px;
 }
 
@@ -7408,9 +7379,6 @@ background: linear-gradient(135deg, #C18602, #BC7417);
   text-decoration: underline;
 }
 
-.job-apply-section .job-form .submit-btn-holder {
-  marign-bottom: 0;
-}
 
 .job-apply-section .job-form .submit-btn-holder button {
   font-family: "Nunito", sans-serif;
@@ -7663,10 +7631,6 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 /*--------------------------------------------------------------
 #12.1	service-single-content	
 --------------------------------------------------------------*/
-.service-single-content {
-  /*** service-details ***/
-  /*** service single tab ***/
-}
 
 .service-single-content .service-details h2 {
   font-size: 30px;
@@ -7878,9 +7842,7 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 /*--------------------------------------------------------------
 #14.1	case-study-single-content
 --------------------------------------------------------------*/
-.case-study-single-content .case-details {
-  /*** service single tab ***/
-}
+
 
 @media screen and (min-width: 1200px) {
   .case-study-single-content .case-details {
@@ -8570,12 +8532,6 @@ background: linear-gradient(135deg, #C18602, #BC7417);
 /*--------------------------------------------------------------
 #13.0 blog-single-section
 --------------------------------------------------------------*/
-.blog-single-section {
-  /*** tags ***/
-  /*** related post ***/
-  /*** about-author ***/
-  /*** comments ***/
-}
 
 @media screen and (min-width: 1200px) {
   .blog-single-section .blog-details-content {
@@ -9027,9 +8983,6 @@ background: linear-gradient(135deg, #C18602, #BC7417);
   color: #09a223;
 }
 
-.blog-single-section .comments {
-  /*** .article ***/
-}
 
 .blog-single-section .comments h3 {
   font-size: 18px;
