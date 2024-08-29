@@ -21,11 +21,11 @@ $mail->Host = "smtp.example.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
-$mail->Username = "you@example.com";
+$mail->Username = "arjaydomingo008@gmail.com";
 $mail->Password = "password";
 
 $mail->setFrom($email, $name);
-$mail->addAddress("dave@example.com", "Dave");
+$mail->addAddress("arjaydomingo008@gmail.com", "Semco");
 
 $mail->Subject = $subject;
 $mail->Body = $message;
