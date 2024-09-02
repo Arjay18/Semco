@@ -308,14 +308,16 @@ img {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  visibility: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
   opacity: 1;
+  visibility: visible;
 }
 
 .mfp-with-zoom.mfp-ready.mfp-bg {
@@ -325,6 +327,7 @@ img {
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
+  visibility: hidden;
 }
 
 /*** for fancybox video ***/
@@ -3108,7 +3111,7 @@ background-image: linear-gradient(#e79654, #e25a00);
   right: -20%;
   top: 100%;
   opacity: 0;
-  visiblity: hidden;
+  visibility: hidden;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -3949,7 +3952,7 @@ background-image: linear-gradient(#e79654, #e25a00);
   }
 }
 
-.services-section .grid .icon .fi:before {
+.services-section .services-grid .grid .icon .fi:before {
   font-size: 40px;
   font-size: 2.66667rem;
   color: #09a223;
@@ -4709,6 +4712,7 @@ background-image: linear-gradient(#e79654, #e25a00);
   left: 0;
   bottom: 0;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -6985,6 +6989,7 @@ background-image: linear-gradient(#e79654, #e25a00);
   left: 0;
   bottom: 0;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -7072,6 +7077,7 @@ background-image: linear-gradient(#e79654, #e25a00);
 .team-pg-section .all-team-grids .grid:hover .member-pic-social .social {
   bottom: 20px;
   opacity: 1;
+  visibility: visible;
 }
 
 /*--------------------------------------------------------------
@@ -7935,13 +7941,9 @@ background-image: linear-gradient(#e79654, #e25a00);
 }
 
 @media (max-width: 767px) {
-  .case-study-single-content .case-details .chart {
-    height: 300px;
+  .case-study-single-content .case-details .case-single-tab {
+    margin-top: 45px;
   }
-}
-
-.case-study-single-content .case-details .case-single-tab {
-  margin-top: 45px;
 }
 
 .case-study-single-content .case-details .case-single-tab .nav {
