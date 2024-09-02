@@ -819,3 +819,26 @@
 
 
 })(window.jQuery);
+
+
+    $(document).ready(function() {
+        $('#search-form').on('submit', function(e) {
+            e.preventDefault();
+            var searchTerm = $('#search-input').val().toLowerCase();
+            
+            $('.news-grids .grid').each(function() {
+                var content = $(this).text().toLowerCase();
+                if(content.indexOf(searchTerm) === -1) {
+                    $(this).hide();
+                } else {
+                    $(this).show();
+                }
+            });
+        });
+
+        $('#search-input').on('keyup', function() {
+            if($(this).val() === '') {
+                $('.news-grids .grid').show();
+            }
+        });
+    });

@@ -213,28 +213,25 @@
                             <div class="contact-form">
                                 <form method="post" id="contact-form" action="send-email.php">
                                     <div>
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Full Name">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required>
                                     </div>
                                     <div>
-                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
                                     </div>
-                                    <div>
                                     <div>
                                         <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone number">
                                     </div>
-                                    </div>
                                     <div>
-                                        <textarea class="form-control" name="notes" id="notes" placeholder="write"></textarea>
+                                        <textarea class="form-control" name="message" id="message" placeholder="Write your message" required></textarea>
                                     </div>
                                     <div class="submit-btn">
                                         <div class="btn-wrapper">
                                             <button type="submit" class="theme-btn-s5">Submit</button>
-                                            <div id="loader">
+                                            <div id="loader" style="display: none;">
                                                 <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </form>
                             </div>
                         </div>
@@ -389,5 +386,32 @@
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('#contact-form').on('submit', function(e) {
+            e.preventDefault();
+            $('.submit-btn button').hide();
+            $('#loader').show();
+            
+            $.ajax({
+                url: 'send-email.php',
+                type: 'post',
+                data: $('#contact-form').serialize(),
+                success: function(response) {
+                    alert('Message sent successfully!');
+                    $('#contact-form')[0].reset();
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    alert('An error occurred. Please try again later.');
+                },
+                complete: function() {
+                    $('.submit-btn button').show();
+                    $('#loader').hide();
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>
