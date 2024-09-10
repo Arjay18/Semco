@@ -841,4 +841,38 @@
                 $('.news-grids .grid').show();
             }
         });
+
+        if ('ontouchstart' in window) {
+            $('.menu-item-has-children > a').on('click', function(e) {
+                e.preventDefault();
+                var $parent = $(this).parent();
+                $parent.toggleClass('show-mega-menu');
+                $('.menu-item-has-children').not($parent).removeClass('show-mega-menu');
+            });
+
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.menu-item-has-children').length) {
+                    $('.menu-item-has-children').removeClass('show-mega-menu');
+                }
+            });
+        }
+
+        (function($) {
+            "use strict";
+            
+            $('.menu-item-has-children > a').on('click', function(e) {
+                e.preventDefault();
+                $(this).siblings('.mega-menu').slideToggle();
+                $(this).parent().toggleClass('active');
+            });
+
+            $(document).on('click', function(e) {
+                var container = $(".menu-item-has-children");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    $('.mega-menu').slideUp();
+                    $('.menu-item-has-children').removeClass('active');
+                }
+            });
+
+        })(jQuery);
     });

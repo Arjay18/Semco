@@ -126,12 +126,6 @@ URL:            http://themeforest.net/user/themexriver
 #16.1	blog-calassic-main-content
 
 
----------------------------------------------------------------
-	 #Blog details
----------------------------------------------------------------
-#13.0 blog-single-section
-
-
 ----------------------------------------------------------------*/
 /*---------------------------
 	Fonts
@@ -212,6 +206,11 @@ a:focus {
 
 img {
   max-width: 100%;
+}
+.quote-section {
+  background-color: #e67e22;
+  padding: 60px 20px;
+  margin: 60px 0;
 }
 
 /*--------------------------------------------------------------
@@ -5509,7 +5508,7 @@ background-image: linear-gradient(#e79654, #e25a00);
 
 @media (max-width: 991px) {
   .insurance-section {
-    padding-bottom: 90px;
+    padding-bottom: 80px;
   }
 }
 
@@ -7104,10 +7103,6 @@ background-image: linear-gradient(#e79654, #e25a00);
   color: #fff;
 }
 
-.team-pg-section .all-team-grids .member-pic-social ul a:hover {
-  color: #09a223;
-}
-
 .team-pg-section .all-team-grids .member-info {
   padding: 20px 0;
   -webkit-transition: all 0.3s;
@@ -7156,11 +7151,6 @@ background-image: linear-gradient(#e79654, #e25a00);
 
 .team-pg-section .all-team-grids .grid:hover .member-info {
   background-color: #09a223;
-}
-
-.team-pg-section .all-team-grids .grid:hover .member-info h3,
-.team-pg-section .all-team-grids .grid:hover .member-info span {
-  color: #fff;
 }
 
 .team-pg-section .all-team-grids .grid:hover .member-pic-social .social {
@@ -7903,12 +7893,6 @@ background-image: linear-gradient(#e79654, #e25a00);
   border: 5px solid #fff;
   -webkit-box-shadow: 0 0 15px rgba(171, 171, 171, 0.25);
   box-shadow: 0 0 15px rgba(171, 171, 171, 0.25);
-}
-
-.case-studies-pg-section .cat {
-  margin-top: 25px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e6e8eb;
 }
 
 .case-studies-pg-section .cat span {
